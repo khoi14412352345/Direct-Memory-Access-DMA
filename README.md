@@ -1,15 +1,13 @@
-# DMA Lab 5 Workspace
+# DMA 
 
 This workspace contains a completed Direct Memory Access assignment. The DMA is controlled through an APB slave interface and moves 32-bit words through an AXI4-Lite master interface. Independent read and write engines are connected by a four-entry FIFO so the two AXI transaction streams can overlap.
 
 ## Files
 
-- `dma_lab5_specification.md` - assignment specification.
+- `SPEC.md` - assignment specification.
 - `dma.v` - completed DMA RTL with APB CSRs, overlap-safe address generation, independent AXI read/write engines, and FIFO buffering.
 - `dma_top_tb.v` - original provided testbench skeleton with aligned 64-byte and 256-byte transfers.
 - `dma_top_tb1.v` - extended self-checking testbench with 15 functional, boundary, status, overlap, and reset cases.
-- `diagrams/` - timing diagrams for APB, AXI4-Lite, and the optimized AXI4-Lite approach.
-- `test_plan.md` - planned functional and performance coverage.
 - `Makefile` - build, lint, run, and clean targets for Icarus Verilog.
 
 ## Register Map
